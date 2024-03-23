@@ -1,0 +1,44 @@
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/myToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/purple_500"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.DayNight">
+
+    <!-- Container LinearLayout để chứa các ImageButton -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="17dp"> <!-- Đặt gravity là end để đảm bảo các nút được căn phải -->
+
+        <!-- Nút "star" -->
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star1"
+            android:background="@color/purple_500"
+            android:layout_marginEnd="8dp" /> <!-- Để khoảng cách giữa các nút -->
+
+        <!-- Nút "create" -->
+        <ImageButton
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_create_24"
+            android:background="@color/purple_500"
+            android:layout_marginEnd="8dp" /> <!-- Để khoảng cách giữa các nút -->
+
+        <!-- Nút "vert" -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_more_vert_24"
+            android:background="@color/purple_500" />
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>
